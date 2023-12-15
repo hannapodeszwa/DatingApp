@@ -6,10 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    [ApiController]
-   // [EnableCors("OpenCORSPolicy")]
-    [Route("api/[controller]")] // /api/users
-    public class UsersController : ControllerBase
+        public class UsersController : BaseApiController
     {
         private readonly DataContext _context;
         public UsersController(DataContext context)
